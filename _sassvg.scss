@@ -169,12 +169,12 @@ $sassvg--url: true !default;
 	$fillcolor: $color,
 	$strokecolor: $color
 ) {
-	@if meta.type-of($repeat) == string { $repeat: string.unquote($repeat); }
-	@if meta.type-of($position) == string { $position: string.unquote($position); }
-	@if meta.type-of($size) == string { $size: string.unquote($size); }
+  @if meta.type-of($repeat) == string { $repeat: string.unquote($repeat); }
+  @if meta.type-of($position) == string { $position: string.unquote($position); }
+  @if meta.type-of($size) == string { $size: string.unquote($size); }
 
   background-image: sassvg($icon, $color, $fillcolor, $strokecolor, $url: true);
-	background-repeat: $repeat;
-	background-position: $position;
-	background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
 }
